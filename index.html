@@ -14,6 +14,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
 </head>
 
 <body class="main-content">
@@ -28,10 +30,25 @@
             <div class="right-header">
                 <h1 class="name">
                     Hi, I'm <span>Thabsheera Chonari</span>
-                    currently pursuing a degree in BCom.
+                    currently pursuing a degree in BCom and
                 </h1>
+                <h1 id="element"></h1>
+
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['Artist', 'Business Acumen', 'Researcher'],
+                        typeSpeed: 50,
+                        onComplete: function () {
+                            setTimeout(function () {
+                                typed.reset();
+                                typed.start();
+                            }, 2000); // Restart after 2 seconds (2000 milliseconds)
+                        }
+                    });
+                </script>
                 <p>
-                    I find great joy in exploring creative avenues and discovering new ways to bring unique concepts to
+                    I find great joy in exploring creative avenues and discovering new ways to bring unique concepts
+                    to
                     life. The world of
                     innovation fascinates me, and I constantly seek inspiration from various sources to fuel my
                     creativity.
